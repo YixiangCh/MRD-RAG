@@ -15,7 +15,7 @@ This repo provides the source code & data of our paper: "MRD-RAG: Mimicking Clin
 
 To run this project, follow these steps:
 
-1. Import our DI-Tree KB into neo4j. The dump files are availeble <a href="[DI-Tree KB](https://pan.baidu.com/s/1I3A7k-Yac5ecB2X5YZde8w?pwd=vwe5)">here</a>. You can use the following command to dump our KB into your own neo4j database.
+1. Import our DI-Tree KB into neo4j. The dump files are availeble <a href="https://pan.baidu.com/s/1I3A7k-Yac5ecB2X5YZde8w?pwd=vwe5">here</a>. You can use the following command to dump our KB into your own neo4j database.
 
    ```bash
    neo4j-admin load --from="DI-Tree KB/modern-medicine-disease.dump" --database="NAME_OF_YOUR_DATABASE" --force

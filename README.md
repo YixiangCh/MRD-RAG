@@ -9,7 +9,7 @@
 
 <!-- ## 项目介绍 -->
 
-This repo provides the source code & data of our paper: "MRD-RAG: Mimicking Clinical Diagnosis Through Multi-round Medical Dialogue Analysis".
+This repo provides the source code & data of our paper: "MRD-RAG: Enhancing Medical Diagnosis with Multi-Round Retrieval-Augmented Generation".
 
 ## How to run
 

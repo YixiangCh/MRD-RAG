@@ -4,20 +4,20 @@
 
 
 <div style="text-align: center;">
-  <img src="assets\MRD_RAG_Pipeline.jpeg" alt="image description" width="400" />
+  <img src="assets\MRD_RAG_Pipeline.png" alt="image description" width="400" />
 </div>
 
 
-This repo provides the source code & data of our paper: "MRD-RAG: Mimicking Clinical Diagnosis Through Multi-round Medical Dialogue Analysis".
+This repo provides the source code & data of our paper: "MRD-RAG: A Multi-Round Diagnostic RAG Framework for Simulating Clinical Reasoning".
 
 ## How to run
 
 To run this project, follow these steps:
 
-1. Import our DI-Tree KB into neo4j. The dump files are availeble <a href="https://drive.google.com/drive/folders/1IhO7lBV674Jk95q71tJUMNZDRca8LFPt?usp=sharing">here</a>. You can use the following command to dump our KB into your own neo4j database.
+1. Import our DiagnosGraph KB into neo4j. The dump files are availeble <a href="https://drive.google.com/drive/folders/1IhO7lBV674Jk95q71tJUMNZDRca8LFPt?usp=sharing">here</a>. You can use the following command to dump our KB into your own neo4j database.
 
    ```bash
-   neo4j-admin load --from="DI-Tree KB/modern-medicine-disease.dump" --database="NAME_OF_YOUR_DATABASE" --force
+   neo4j-admin load --from="DiagnosGraph KB/modern-medicine-disease.dump" --database="NAME_OF_YOUR_DATABASE" --force
    ```
 
 2. Navigate to the project directory：

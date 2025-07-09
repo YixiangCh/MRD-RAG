@@ -71,8 +71,8 @@ class MRD_RAG:
 
             embedding_node2first_tree_node_cypher = """MATCH (embedding_node)<-[*]-(main_node)-[]->(info_tree_root:`Info Tree Root`{source: "%s"})-[]->(first_info_tree_node)\nWHERE elementid(embedding_node)="%s"\nRETURN elementid(first_info_tree_node) as node_id"""%(source,node_id)
             root_node_uuid=kg.query(embedding_node2first_tree_node_cypher)[0]["node_id"]
-            DI_tree = restore_info_tree(kg=kg,root_node_uuid=root_node_uuid)
-            diagnosis_information = get_info(DI_tree,splitter,search_list=search_list,need_desc=need_desc)
+            DiagnosGraph = restore_info_tree(kg=kg,root_node_uuid=root_node_uuid)
+            diagnosis_information = get_info(DiagnosGraph,splitter,search_list=search_list,need_desc=need_desc)
             candidate_disease_name_list.append(disease_name)
             candidate_diagnosis_information_list.append(diagnosis_information)
         return candidate_disease_name_list,candidate_diagnosis_information_list
